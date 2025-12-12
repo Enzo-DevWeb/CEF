@@ -1,0 +1,25 @@
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.my-card{transition: box-shadow 0.18s, transform 0.18s;}
+.my-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 8px 2px gray;
+    background-color: rgb(245, 245, 245);
+}
+
+.mt-3 i {color: rgba(255, 255, 255, 0.16);}
+.mt-3 i:hover {
+    color: white;
+}
+
+.footer-link > a:hover {
+    font-weight: bold;
+}

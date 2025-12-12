@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+.blueBar {
+    border: 2px solid #0d6efd;
+    width: 25%;
+    margin: 0 auto 35px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+#textDiv {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#textDiv h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#textDiv p {font-size: 0.8rem;}
+
+#cards {
+    display: flex;
+    padding: 0 5rem;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.my-card {
+    width: 25%;
+    height: auto;
+    text-align: center;
+    padding: 15px 9px;
+    margin: 30px 10px 75px;
+    border: 2px solid rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+}
+
+.my-card h3 {
+    font-weight: bold;
+}
+
+.my-card img {
+    width: 12%;
+    margin: 1.8rem 0;
+}
+
+.my-card .card-text {
+    text-wrap: balance;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    #cards {
+        flex-direction: column;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    .my-card {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .my-card img {width: 20%;}
+    #textDiv h1 {font-size: 1.5rem;}
+    #textDiv p {font-size: 0.7rem;}
+}

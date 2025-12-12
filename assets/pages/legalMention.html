@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions légales</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../style/legalMention.css">
+    <link rel="stylesheet" href="../style/effects.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.png">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JOHN DOE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="realisations.html">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">MENTIONS LÉGALES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+
+        <div id="textDiv" class="text-center mb-4">
+            <h1>Mentions légales</h1>
+            <div class="blueBar"></div>
+        </div>
+
+        <div class="accordion" id="accordionLegal">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Editeur du site
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionLegal">
+                    <div class="accordion-body">
+                        <h3>Enzo Loisy</h3>
+                        <ul id="list">
+                            <li>
+                                <img src="../images/icons/map.svg" alt="icone de map">
+                                <a href="https://maps.app.goo.gl/q2WmpsMXULnWyAz89" target="_blank">40 rue Laure Diebold</a>
+                            </li>
+                            <li>
+                                <img src="../images/icons/geo-alt.svg" alt="icone de geo-alt">
+                                <a href="https://maps.app.goo.gl/jCMawYDR7urexdGR7" target="_blank">69009 Lyon, France</a>
+                            </li>
+                            <li>
+                                <img src="../images/icons/phone.svg" alt="icone de phone">
+                                <a href="tel:1020304050">10 20 30 40 50</a>
+                            </li>
+                            <li>
+                                <img src="../images/icons/envelope-at.svg" alt="icone d'envelope-at">
+                                <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Hébergeur
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionLegal">
+                    <div class="accordion-body">
+                        <h3>alwaysdata</h3>
+                        <a href="https://share.google/hXz1sLtWNBfyJ8vIt" class="link" target="_blank">91 Rue du Faubourg Saint-Honoré, 75008 Paris</a><br>
+                        <a href="www.alwaysdata.com" class="blueLink"><img src="../images/icons/globe.svg" alt="icone de globe">www.alwaysdata.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Crédits
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionLegal">
+                    <div class="accordion-body">
+                        <h3>Crédits</h3>
+                        <p>Ce site a été réalisé par Enzo Loisy, étudiant au <a href="https://www.centre-europeen-formation.fr/">Centre Européen de formation.</a></p>
+                        <p class="italic">Les images utilisées sur ce site sont libre de droits et ont été obtenues sur le site <a href="https://pixabay.com">Pixabay</a></p>
+                        <p class="italic">La favicon de ce site a été fournie par <a href="https://www.flaticon.com/free-icons/john-doe">John doe Icons erstellt von Freepik - Flaticon</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4 footer-link">
+                    <h5>John Doe</h5>
+                    <a class="d-block text-light">40 rue Laure Diebold</a>
+                    <a class="d-block text-light">69009 Lyon, France</a>
+                    <a href="tel:+1020304050" class="d-block text-light">10 20 30 40 50</a>
+                    <a href="mailto:john.doe@gmail.com" class="d-block text-light">john.doe@gmail.com</a>
+                </div>
+
+                <div class="col-md-4 mb-4 footer-link">
+                    <h5>Liens utiles</h5>
+                    <a class="d-block text-light">Accueil</a>
+                    <a class="d-block text-light">Services</a>
+                    <a class="d-block text-light">Portfolio</a>
+                    <a class="d-block text-light">Me contacter</a>
+                    <a class="d-block text-light">Mentions légales</a>
+                </div>
+
+                <div class="col-md-4 footer-link">
+                    <h5>Mes dernières réalisations</h5>
+                    <a class="d-block text-light">Fresh Food</a>
+                    <a class="d-block text-light">Restaurant Akira</a>
+                    <a class="d-block text-light">Espace bien être</a>
+                    <a class="d-block text-light">SEO</a>
+                    <a class="d-block text-light">Création d'une API</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

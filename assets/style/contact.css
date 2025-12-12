@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+.blueBar {
+    border: 2px solid #0d6efd;
+    width: 25%;
+    margin: 0 auto 35px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+#textDiv {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#textDiv h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#textDiv p {font-size: 0.8rem;}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 4rem 0;
+    justify-self: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 8px gray;
+    border-radius: 6px;
+}
+#form h2 {font-weight: bold;}
+
+/* LEFT PART */
+#left-part {
+    width: 49%;
+    padding: 1.5rem;
+}
+#left-part form input, textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+#left-part form input:focus {border-color: #444;}
+#left-part form textarea:focus {border-color: #444;}
+#left-part form button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+#left-part form button:hover {
+    background-color: #004ab9;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 7px gray;
+}
+
+/* RIGHT PART */
+#right-part {
+    width: 49%;
+    padding: 1.5rem;
+}
+#right-part ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#right-part a {
+    text-decoration: none;
+    color: #212529c6;
+}
+#right-part li {transition: transform 0.18s;}
+#right-part li:hover {transform: translateX(4px);}
+#right-part iframe {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+
+#left-part .blueBar {width: 100%;}
+#right-part .blueBar {width: 100%;}
+
+
+@media (max-width: 768px) {
+    #form {
+        flex-direction: column;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    #left-part,
+    #right-part {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #left-part form button {
+        width: 100%;
+    }
+}

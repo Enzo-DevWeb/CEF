@@ -4,22 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/style/index.css">
-    <link rel="stylesheet" href="assets/style/effects.css">
+    <link rel="stylesheet" href="../style/services.css">
+    <link rel="stylesheet" href="../style/effects.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="/assets/images/icons/favicon.png">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.png">
 </head>
 <body>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span id="closeModal" class="close">&times;</span>
-            <h2 id="name"></h2>
-            <img id="avatar" width="120" alt="avatar img">
-            <p id="bio"></p>
-            <p id="followers"></p>
-            <p id="repos"></p>
-        </div>
-    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -30,73 +20,62 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link" href="../../index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/pages/services.html">SERVICES</a>
+                            <a class="nav-link active" aria-current="page" href="#">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/pages/realisations.html">PORTFOLIO</a>
+                            <a class="nav-link" href="realisations.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/pages/contact.html">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/pages/legalMention.html">MENTIONS LÉGALES</a>
+                            <a class="nav-link" href="legalMention.html">MENTIONS LÉGALES</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Bonjour, je suis John Doe</h1>
-                <h2>Développeur web full stack</h2>
-                <button type="button" class="btn btn-danger" id="openModal">En savoir plus</button>
-            </div>
-        </div>
     </header>
     <main>
-        <div class="vertical-flex" id="card-main">
-            <div id="left-div">
-                <h2>A propos</h2>
-                <div class="blueBar"></div>
-                <img src="assets/images/john-doe-about.jpg" alt="image of john doe">
-                <p>
-                    <!-- Avertissement W3C : le validateur détecte du texte factice (Lorem ipsum) alors que la page est déclarée en français -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus quasi error quia,
-                    fugit velit, deserunt, quidem in ad natus quod voluptatibus nulla
-                    dolor aperiam animi dolore. Sequi, magnam tempore!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus quasi error quia,
-                    fugit velit, deserunt, quidem in ad natus quod voluptatibus nulla
-                    dolor aperiam animi dolore. Sequi, magnam tempore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus quasi error quia,
-                    fugit velit, deserunt, quidem in ad natus quod voluptatibus nulla
-                    dolor aperiam animi dolore. Sequi, magnam tempore!
+        <img src="../images/banner.jpg" alt="banierre">
+        <div id="textDiv">
+            <h1>Mon offre de services</h1>
+            <p>Voici les prestations sur lesquelles je peux intervenir</p>
+            <div class="blueBar"></div>
+        </div>
+        <div id="cards">
+            <div class="my-card">
+                <img src="../images/icons/brush.svg" alt="icone de pinceau">
+                <h3>UX Design</h3>
+                <p class="card-text">
+                    L'UX Design est une discipline qui consiste à concevoir
+                    des produits (sites web, applications mobiles, logiciels, objets connectés, etc.)
+                    en plaçant l'utilisateur au centre des préoccupations.
+                    L'objectif est de rendre l'expérience utilisateur la plus fluide et agréable possible.
                 </p>
             </div>
-            <div id="right-div">
-                <h2>Mes compétences</h2>
-                <div class="blueBar"></div>
-                <h3>HTML5 90%</h3>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h3>CSS3 80%</h3>
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h3>JAVASCRIPT 70%</h3>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h3>PHP 60%</h3>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h3>REACT 50%</h3>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            <div class="my-card">
+                <img src="../images/icons/code-slash.svg" alt="icone de pinceau">
+                <h3>Développement web</h3>
+                <p class="card-text">
+                    Le développement de sites web consiste à créer des sites
+                    internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.)
+                    et des frameworks (Bootstrap, React, Angular, etc.).
+                </p>
+            </div>
+            <div class="my-card">
+                <img src="../images/icons/search.svg" alt="icone de pinceau">
+                <h3>Référencement</h3>
+                <p class="card-text">
+                    Le référencement naturel (SEO) est une technique
+                    qui consiste à optimiser un site web pour le faire
+                    remonter dans les résultats des moteurs de
+                    recherche (Google, Bing, Yahoo, etc.). L'objectif est
+                    d'attirer un maximum de visiteurs qualifiés sur le site.
+                </p>
             </div>
         </div>
     </main>
@@ -139,7 +118,6 @@
     </footer>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <script src="assets/scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
